@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="eglabs.com.crushify.Activity.AfterLogin.CreateMaleProfile">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    <TextView
+        android:id="@+id/txtvfname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/txtlfname"
+        android:text="@string/txtvname"
+        android:layout_marginTop="8dp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtlfname"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnfnamehelp"
+        app:layout_constraintStart_toEndOf="@+id/txtvfname">
+
+        <EditText
+            android:id="@+id/edtfname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/edtname"
+            android:inputType="textPersonName" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnfnamehelp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttonshape"
+        android:drawableBottom="@drawable/ic_help_black_24dp"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtvfheight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtvheight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtvfname"
+        app:layout_constraintBottom_toBottomOf="@+id/spnfheight"
+        android:layout_marginTop="8dp"
+        />
+
+    <Spinner
+        android:id="@+id/spnfheight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtlfname"/>
+
+    <TextView
+        android:id="@+id/txtvfbodytype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtvbodgytype"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtvfheight"
+        app:layout_constraintBottom_toBottomOf="@+id/spnfbodytype"
+        android:layout_marginTop="8dp"/>
+
+    <Spinner
+        android:id="@+id/spnfbodytype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnfheight"/>
+
+    <TextView
+        android:id="@+id/txtvfhairstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtvhairstyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtvfbodytype"
+        app:layout_constraintBottom_toBottomOf="@+id/spnfhairstyle"
+        android:layout_marginTop="8dp"/>
+
+    <Spinner
+        android:id="@+id/spnfhairstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnfbodytype"/>
+
+    <TextView
+        android:id="@+id/txtvffavdresscolour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtvfavdresscolour"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtvfhairstyle" />
+
+    <View
+        android:id="@+id/fvdresscolour"
+        android:layout_width="85dp"
+        android:layout_height="33dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnfdresscolour"
+        app:layout_constraintStart_toEndOf="@+id/txtvffavdresscolour"
+        app:layout_constraintTop_toBottomOf="@+id/spnfhairstyle" />
+
+    <Button
+        android:id="@+id/btnfdresscolour"
+        android:layout_width="81dp"
+        android:layout_height="42dp"
+        android:text="@string/btnfavdresscolour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnfhairstyle" />
+    <TextView
+        android:id="@+id/txtvftodaydresscolour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtvtodaydresscolour"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtvffavdresscolour" />
+
+    <View
+        android:id="@+id/fvtodaydresscolour"
+        android:layout_width="85dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnftodaydresscolour"
+        app:layout_constraintStart_toEndOf="@+id/txtvftodaydresscolour"
+        app:layout_constraintTop_toBottomOf="@+id/fvdresscolour" />
+
+    <Button
+        android:id="@+id/btnftodaydresscolour"
+        android:layout_width="81dp"
+        android:layout_height="42dp"
+        android:text="@string/btnfavdresscolour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnfdresscolour" />
+
+    <TextView
+        android:id="@+id/txtvfusualdress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtvusualdress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtvftodaydresscolour"
+        app:layout_constraintBottom_toBottomOf="@+id/spnfusualdress"
+        android:layout_marginTop="8dp"/>
+    <Spinner
+        android:id="@+id/spnfusualdress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnftodaydresscolour"/>
+
+    <TextView
+        android:id="@+id/txtvftodaydress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtvtodaysdress"
+        app:layout_constraintTop_toBottomOf="@+id/txtvfusualdress"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <Spinner
+        android:id="@+id/spnftodaydress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnfusualdress"/>
+
+    <Switch
+        android:id="@+id/swtchprof"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/matchstatus"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtvftodaydress"
+        android:checked="false"/>
+
+    <Button
+        android:id="@+id/btnfmatchhelpprof"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:drawableBottom="@drawable/ic_help_black_24dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        app:layout_constraintStart_toEndOf="@+id/swtchprof"
+        app:layout_constraintTop_toTopOf="@+id/swtchprof"
+        />
+
+    <Button
+        android:id="@+id/btncreatefemaleprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/btncreateprofile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnfmatchhelpprof" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

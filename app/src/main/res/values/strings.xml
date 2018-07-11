@@ -1,0 +1,140 @@
+<resources>
+    <string name="app_name" translatable="false">Crushify</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <!--Strings related to nav drawer -->
+    <string name="home">Home</string>
+    <string name="ownprofile">Own Profile</string>
+    <string name="crushprofile">Crush profile</string>
+    <string name="createownprofile">Create Profile</string>
+    <string name="createcrushprofile">Create Crush</string>
+    <string name="createadditionalcrush">Create Additional Crushes</string>
+    <string name="matchstatus">Match Status</string>
+    <string name="locationinformation">Location Information</string>
+    <string name="chat">Chat</string>
+    <string name="logout">Log Out</string>
+    <string name="login">Login/Register</string>
+    <string name="profile">Profiles </string>
+    <string name="accountsettings">Account Settings</string>
+    <string name="navheader">Menu</string>
+
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+    <string name="headertxt">Selva</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_afterlogin_activity_titles">
+        <item>Home</item>
+        <item>Profiles</item>
+        <item>Crush Profile</item>
+        <item>Chat</item>
+        <item>Location Information</item>
+        <item>Chat</item>
+        <item>Log Out</item>
+        <item>Match Status</item>
+        <item>Account Settings</item>
+    </string-array>
+
+    <string-array name="nav_item_beforesignin_titles">
+        <item>login</item>
+    </string-array>
+
+
+    <!-- Home acitvity button -->
+    <string name="btncrush">Crush</string>
+    <string name="btnmissedconnection">Missed Connection</string>
+    <string name="btnpublic">Public Crushes</string>
+
+    <!-- Gender select -->
+    <string name="btngender">Proceed</string>
+    <string name="txtvgender">Select Gender</string>
+    <string name="txtvowngender">Select Your Gender</string>
+    <string name="txtvcrushgender">Select Crush Gender</string>
+    <string name="gendermale">Male</string>
+    <string name="genderfemale">Female</string>
+    <string name="genderts">TS</string>
+
+
+    <!--login forms string-->
+    <string name="login_form">Login</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="login_button">Login</string>
+    <string name="reset_password">Enter email id</string>
+    <string name="new_user">New User</string>
+    <string name="remember_me" translatable="false">Remember Me</string>
+    <string name="confirm_pass">Confirm Password</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="signin">Create Account</string>
+    <string name="title_activity_nav_bar">NavBar</string>
+    <item name="visible" type="id" />
+    <item name="masked" type="id" />
+    <string name="btnchangepassword">Change Password</string>
+    <string name="btnaccsetting">Account Settings</string>
+    <string name="btnresetpassword">Reset Password</string>
+    <string name="txtusername">User Name</string>
+
+    <!--profile related strings-->
+    <string name="txtvownprofile">Select Your Profile</string>
+    <string name="txtvcrushprofile">Select Crush Profile</string>
+
+
+    <!--account activity related strings-->
+    <string name="btnupdatepass">Update password</string>
+    <string name="edtnewpassword">Enter New Password</string>
+    <string name="btnverifyemail">Verify E-mail</string>
+    <string name="btnsendresetpass">Send Reset Password</string>
+    <string name="btnDeactivate">De-Activate Account</string>
+    <string name="edtconfirmpass">Confirm Password</string>
+    <string name="edtresetemail">Reset E-mail</string>
+    <string name="edtcheckpass">Enter Reset Password</string>
+    <string name="btncheckpass">Validate Password</string>
+    <string name="stchmatch">Match</string>
+
+    <!--own profile strings  -->
+    <string name="txtvname">Name</string>
+    <string name="edtname">Name(Optional)</string>
+    <string name="txtvheight">Height</string>
+
+    <string name="txtvbodgytype">Body Type</string>
+
+    <string name="txtvcomplexion">Complexion</string>
+
+    <string name="txtvmoustache">Moustache</string>
+
+    <string name="txtvbeard">Beard</string>
+
+
+    <string name="txtvfavdresscolour">Favourite Dress Colour</string>
+    <string name="btnfavdresscolour">Choose Colour</string>
+    <string name="txtvtodaydresscolour">Today\'s Dress Colour</string>
+    <string name="btntodaydresscolour">Choose Colour</string>
+    <string name="txtvusualdress">Usual Dressing</string>
+    <string name="edtusualdress">Usual Dress</string>
+    <string name="txtvtodaysdress">Today\'s Dress</string>
+    <string name="edttodaydress">Dress</string>
+    <string name="color_dialog_title">Choose</string>
+    <string name="edtother">Others</string>
+    <string name="btncreateprofile">Create Profile</string>
+    <string name="txtvhairstyle">Hair Style</string>
+
+
+    <string name="prompts">Details</string>
+    <string name="progress">Loading...</string>
+    <string name="txtvchangelang">Change Language</string>
+    <string name="ownprofileexist">You have already created your profile!!If you like to modify your profile goto Own profile</string>
+    <string name="crushprofileexist">You have already created your crush profile!!If you like to modify your crush profile goto crush profile</string>
+    <string name="ownyescurshno">Your profile exists!Proceed to create your crush profile!!</string>
+    <string name="ownyescrushyes">You have created both crush and your profile!!</string>
+    <string name="addionalcrushexist">One Crush Profile Already exists!!Become a paid member to create additional crush profile!</string>
+    <string name="ownnocrushno">Create your profile first!!</string>
+    <string name="api1key">AIzaSyBElI3uCi7lV7wXX8DxbY8pQXFdVUF-QY4</string>
+    <string name="apikey">AIzaSyAvI1V_hVo9WJBqmWUWu7IJQPozyUfSDW4</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

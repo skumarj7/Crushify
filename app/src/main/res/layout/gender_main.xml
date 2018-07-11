@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Relgender"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="eglabs.com.crushify.Activity.BeforeLogin.GenderSelect">
+
+
+    <RadioGroup
+        android:id="@+id/rdgrp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:gravity="center_vertical|center_horizontal"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/textvgender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtvgender" />
+
+        <RadioButton
+            android:id="@+id/rdnbtnfemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:drawableEnd="@mipmap/icon_female" />
+
+        <RadioButton
+            android:id="@+id/rdnbtnmale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:drawableEnd="@mipmap/icon_male" />
+
+        <RadioButton
+            android:id="@+id/rdnbtnlgbt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:drawableEnd="@mipmap/icon_lgbt" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/rellgbt"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rdgrp"
+        android:visibility="gone">
+
+        <RadioGroup
+            android:id="@+id/rdgrplgbt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:id="@+id/txtvlgbtowngender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtvowngender" />
+
+            <RadioButton
+                android:id="@+id/rdnbtnlgbtownmale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:drawableEnd="@mipmap/icon_gay" />
+
+            <RadioButton
+                android:id="@+id/rdnbtnlgbtownfemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:drawableEnd="@mipmap/icon_lesbian" />
+
+            <RadioButton
+                android:id="@+id/rdnbtnlgbtownts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:drawableEnd="@mipmap/icon_ts" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btngender"
+        android:layout_width="210dp"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A02A"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="@string/btngender"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="45dp" />
+
+    <Spinner
+        android:id="@+id/spnlanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+
+</RelativeLayout>

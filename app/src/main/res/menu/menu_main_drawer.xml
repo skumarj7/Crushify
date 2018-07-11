@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/home"/>
+        <item
+            android:id="@+id/ownprofile"
+            android:title="@string/ownprofile" />
+        <item
+            android:id="@+id/crushprofile"
+            android:title="@string/crushprofile" />
+        <item
+            android:id="@+id/createownprofile"
+            android:title="@string/createownprofile" />
+
+        <item
+            android:id="@+id/createcrushprofile"
+            android:title="@string/createcrushprofile" />
+        <item
+            android:id="@+id/createadditionalcrushprofile"
+            android:title="@string/createadditionalcrush" />
+        <item
+            android:id="@+id/match_status"
+            android:title="@string/matchstatus" />
+        <item
+            android:id="@+id/location_information"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/locationinformation" />
+
+        <item
+            android:id="@+id/chat"
+            android:icon="@drawable/ic_chat_black_24dp"
+            android:title="@string/matchstatus" />
+        <item
+            android:id="@+id/accountsettings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/accountsettings" />
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_account_box_black_24px"
+            android:title="@string/logout"/>
+
+    </group>
+
+
+
+</menu>

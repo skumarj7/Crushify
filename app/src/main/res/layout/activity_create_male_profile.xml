@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="eglabs.com.crushify.Activity.AfterLogin.CreateMaleProfile">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtvname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/txtvname"
+            app:layout_constraintBottom_toBottomOf="@+id/txtlname"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtlname"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/btnnamehelp"
+            app:layout_constraintStart_toEndOf="@+id/txtvname">
+
+            <EditText
+                android:id="@+id/edtname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/edtname"
+                android:inputType="textPersonName" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnnamehelp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttonshape"
+            android:drawableBottom="@drawable/ic_help_black_24dp"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtvheight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/txtvheight"
+            app:layout_constraintBottom_toBottomOf="@+id/spnheight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtvname" />
+
+        <Spinner
+            android:id="@+id/spnheight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtlname" />
+
+        <TextView
+            android:id="@+id/txtvbodytype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/txtvbodgytype"
+            app:layout_constraintBottom_toBottomOf="@+id/spnbodytype"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtvheight" />
+
+        <Spinner
+            android:id="@+id/spnbodytype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spnheight" />
+
+        <TextView
+            android:id="@+id/txtvfacialappearance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/txtvcomplexion"
+            app:layout_constraintBottom_toBottomOf="@+id/spnfacial"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtvbodytype" />
+
+        <Spinner
+            android:id="@+id/spnfacial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spnbodytype" />
+
+        <TextView
+            android:id="@+id/txtvmoustache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/txtvmoustache"
+            app:layout_constraintBottom_toBottomOf="@+id/spnmoustache"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtvfacialappearance" />
+
+        <Spinner
+            android:id="@+id/spnmoustache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spnfacial" />
+
+        <TextView
+            android:id="@+id/txtvbeard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/txtvbeard"
+            app:layout_constraintBottom_toBottomOf="@+id/spnbeard"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtvmoustache" />
+
+        <Spinner
+            android:id="@+id/spnbeard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spnmoustache" />
+
+        <TextView
+            android:id="@+id/txtvfavdresscolour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/txtvfavdresscolour"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtvbeard" />
+
+        <View
+            android:id="@+id/vdresscolour"
+            android:layout_width="85dp"
+            android:layout_height="33dp"
+            app:layout_constraintEnd_toStartOf="@+id/btndresscolour"
+            app:layout_constraintStart_toEndOf="@+id/txtvfavdresscolour"
+            app:layout_constraintTop_toBottomOf="@+id/spnbeard" />
+
+        <Button
+            android:id="@+id/btndresscolour"
+            android:layout_width="81dp"
+            android:layout_height="42dp"
+            android:text="@string/btnfavdresscolour"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spnbeard" />
+
+        <TextView
+            android:id="@+id/txtvtodaydresscolour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/txtvtodaydresscolour"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtvfavdresscolour" />
+
+        <View
+            android:id="@+id/vtodaydresscolour"
+            android:layout_width="85dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toStartOf="@+id/btntodaydresscolour"
+            app:layout_constraintStart_toEndOf="@+id/txtvtodaydresscolour"
+            app:layout_constraintTop_toBottomOf="@+id/vdresscolour" />
+
+        <Button
+            android:id="@+id/btntodaydresscolour"
+            android:layout_width="81dp"
+            android:layout_height="42dp"
+            android:text="@string/btnfavdresscolour"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btndresscolour" />
+
+        <TextView
+            android:id="@+id/txtvusualdress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/txtvusualdress"
+            app:layout_constraintBottom_toBottomOf="@+id/spnusualdress"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtvtodaydresscolour" />
+
+        <Spinner
+            android:id="@+id/spnusualdress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btntodaydresscolour" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtlusualdress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txtvusualdress"
+            app:layout_constraintTop_toBottomOf="@+id/spnusualdress">
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/txtvtodaydress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/txtvtodaysdress"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtlusualdress" />
+
+        <Spinner
+            android:id="@+id/spntodaydress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtlusualdress" />
+
+        <Switch
+            android:id="@+id/swtchprof"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:checked="false"
+            android:text="@string/matchstatus"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtvtodaydress" />
+
+        <Button
+            android:id="@+id/btnmatchhelpprof"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/buttonshape"
+            android:drawableBottom="@drawable/ic_help_black_24dp"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            app:layout_constraintStart_toEndOf="@+id/swtchprof"
+            app:layout_constraintTop_toTopOf="@+id/swtchprof" />
+
+        <Button
+            android:id="@+id/btncreatemaleprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/btncreateprofile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnmatchhelpprof" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

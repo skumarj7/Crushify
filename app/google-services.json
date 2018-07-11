@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "886912097652",
+    "firebase_url": "https://crushify-7ccbf.firebaseio.com",
+    "project_id": "crushify-7ccbf",
+    "storage_bucket": "crushify-7ccbf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:886912097652:android:234a823c42cef10d",
+        "android_client_info": {
+          "package_name": "eglabs.com.crushify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "886912097652-s0vav6en0dkmjss3e76f4676ff6s0ukq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "eglabs.com.crushify",
+            "certificate_hash": "13a822b76605cf8e3ad86a465813f43f83f2b889"
+          }
+        },
+        {
+          "client_id": "886912097652-4na18kkbhehmjmr1p7bpv9tnan67lgo3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvMHEjl1vJwDPYUcTqXD5K96ReSakVAiU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "886912097652-4na18kkbhehmjmr1p7bpv9tnan67lgo3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
